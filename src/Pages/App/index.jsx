@@ -6,6 +6,7 @@ import Order from '../MyOrder'
 import Orders from '../MyOrders'
 import NotFound from '../NotFound'
 import SingIn from '../SingIn'
+import Navbar from '../../Components/Navbar'
 
 const AppRouters = () =>
 {
@@ -23,6 +24,7 @@ const AppRouters = () =>
 function App() {
   return (
     <BrowserRouter>
+    <Navbar />
     <AppRouters />
     </BrowserRouter>
   )
