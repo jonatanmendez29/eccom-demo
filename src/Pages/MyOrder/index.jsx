@@ -1,10 +1,9 @@
-import './App.css'
-
+import Layout from '../../Components/Layout'
 function Order() {
   return (
-    <div>
-      Hola Order
-    </div>
+    <Layout>
+      Order
+   </Layout>
   )
 }
 

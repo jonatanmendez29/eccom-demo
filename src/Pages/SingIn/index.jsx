@@ -1,10 +1,9 @@
-import './App.css'
-
+import Layout from '../../Components/Layout'
 function SingIn() {
   return (
-    <div>
-      Ingresar
-    </div>
+    <Layout>
+      Sign In
+   </Layout>
   )
 }
 

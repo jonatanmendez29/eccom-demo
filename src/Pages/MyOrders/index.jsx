@@ -1,10 +1,9 @@
-import './App.css'
-
+import Layout from '../../Components/Layout'
 function Orders() {
   return (
-    <div>
-      Hola Orders
-    </div>
+    <Layout>
+      Orders
+   </Layout>
   )
 }
 

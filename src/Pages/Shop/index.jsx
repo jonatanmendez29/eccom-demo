@@ -1,10 +1,10 @@
 import Layout from '../../Components/Layout'
-function NotFound() {
+function Car() {
   return (
     <Layout>
-      Not Availble
+      Car!!!
    </Layout>
   )
 }
 
-export default NotFound
+export default Car

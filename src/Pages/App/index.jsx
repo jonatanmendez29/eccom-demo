@@ -7,6 +7,7 @@ import Orders from '../MyOrders'
 import NotFound from '../NotFound'
 import SingIn from '../SingIn'
 import Navbar from '../../Components/Navbar'
+import Car from '../Shop'
 
 const AppRouters = () =>
 {
@@ -16,6 +17,7 @@ const AppRouters = () =>
     { path: '/my-order',element: <Order/>},
     { path: '/my-orders',element: <Orders/>},
     { path: '/sing-in',element: <SingIn/>},
+    { path: '/shop',element: <Car/>},
     { path: '/*',element: <NotFound/>},
   ])
   return routers

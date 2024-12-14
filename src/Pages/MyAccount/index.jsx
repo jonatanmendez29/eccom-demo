@@ -1,10 +1,9 @@
-import './App.css'
-
+import Layout from '../../Components/Layout'
 function Account() {
   return (
-    <div>
-      Hola Acount
-    </div>
+    <Layout>
+      Account
+   </Layout>
   )
 }
 
