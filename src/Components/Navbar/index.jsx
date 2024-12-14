@@ -50,11 +50,6 @@ const Navbar = () => {
             text: 'Sign In',
             className: ''
         },
-        {
-            to: '/shop',
-            text: 'shopping_bag 0',
-            className: 'material-symbols-outlined'
-        },
     ];
     return(
         <nav className='flex justify-between items-center fixed z-10 w-full py-5 px-8 text-sm font-light top-0 left-0'>
@@ -83,6 +78,16 @@ const Navbar = () => {
                         </NavLink>
                     </li>
                 ))}
+                <li>
+                    <NavLink to='/shop'
+                        className={({isActive}) => isActive ? activeStyle : ''}
+                    >
+                        <div className='flex w-8 h-8'>
+                            <span className='material-symbols-outlined w-7 h-7'>shopping_bag</span>
+                            <span className='absolute px-6 text-red-700'>0</span>
+                        </div>
+                    </NavLink>
+                </li>
             </ul>
         </nav>
     )
