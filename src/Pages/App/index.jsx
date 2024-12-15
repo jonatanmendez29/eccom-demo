@@ -8,6 +8,7 @@ import NotFound from '../NotFound'
 import SingIn from '../SingIn'
 import Navbar from '../../Components/Navbar'
 import Car from '../Shop'
+import { ShoppingCartProvider } from '../../Context'
 
 const AppRouters = () =>
 {
@@ -25,10 +26,12 @@ const AppRouters = () =>
 
 function App() {
   return (
-    <BrowserRouter>
-    <Navbar />
-    <AppRouters />
-    </BrowserRouter>
+    <ShoppingCartProvider>
+      <BrowserRouter>
+        <Navbar />
+        <AppRouters />
+      </BrowserRouter>
+    </ShoppingCartProvider>
   )
 }
 
